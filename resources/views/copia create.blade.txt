@@ -1,0 +1,61 @@
+<!--<html>
+    <head>
+        <title>
+
+         </title>
+    </head>
+    <body>
+       <p>Hola mundo desde mi primer vista Ricardo Aldair Puente Reyes</p>
+    </body>
+</html> -->
+
+<!--
+@extends('layouts.app')
+@section('title', 'Trainers Create')
+@section('content')
+<form class="form-group" method="POST" action="/trainers">
+    @csrf
+         <div clas='form-group'>
+             <label for=''>ID:</label>
+             <input type='text'name="id"class='form-control'>
+             <label for=''>Nombre:</label>
+             <input type='text'name="name"class='form-control'>
+         </div>
+         <button type='submit'class='btn btn-primary'>
+        Guardar</button>
+</form>
+@endsection -->
+
+<!-- Añadido el 27-09-22 -->
+
+-------Código del listado trainers -------
+@extends('layouts.app')
+@section('title','Trainers')
+@section('content')
+@csrf
+    <p>Listado de trainers</p>
+    @foreach ($trainers as $trainer)
+    <p>{$trainer->name}}</p>
+@endforeach
+@endsection
+
+-------Código de las cartas-------
+@extends('layouts.app')
+@section('title','trainers')
+@section('content')
+    @csrf
+    <p>Listado de trainers</p>
+    <div class="row">
+        @foreach($trainers as $trainer)
+        <div class="col-sm">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="download.png" alt="Imagen del Card...">
+            <div class="card-body">
+            <h5 class="card-title">{{$trainer->name}}</h5>
+            <p class="card-text">Texto de ejemplo.</p>
+            <a href="#" class="btn btn-primary">Botón de prueba</a>
+  </div>
+</div>
+</div>
+@endforeach
+</div>
