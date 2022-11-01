@@ -90,3 +90,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 //Añadido el 29-09-22
 Route::get('delete/{id}','TrainerController@destroy');
+
+//Añadido el 01-11-22
+Route::get('descargar-entrenadores','TrainerController@pdf')->name('listado.pdf');
