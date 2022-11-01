@@ -55,7 +55,7 @@ class TrainerController extends Controller
             //Datos del formulario
             $trainer = new Trainer();
             $trainer->name=$request->input('name');
-            $trainer->Apellidos=$request->input('apellido');
+            $trainer->Apellidos=$request->input('Apellidos');
 
             //Imagen
             $trainer->avatar=$name;
