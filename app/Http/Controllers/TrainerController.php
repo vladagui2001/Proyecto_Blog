@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 //Añadido 26/09/22
 use App\Http\Controllers\Controller;
 use App\Trainer;
-use Barryvdh\DomPDF\Facade as PDF;
+use PDF;
 
 class TrainerController extends Controller
 {
@@ -158,8 +158,9 @@ class TrainerController extends Controller
 
     public function pdf()
     {
-        $trainers=Trainer::all();;
-        $pdf = PDF::loadView('pdf.listado', compact('trainers'));
+        $trainers=Trainer::all();
+        //$pdf = PDF::loadView('pdf.listado', ['Data' => $Data])->setOptions(['defaultFont' => 'sans-serif']);
+        $pdf = PDF::loadView('pdf.listado',compact('trainers'));
         return $pdf->download('listado.pdf');
     }
     
