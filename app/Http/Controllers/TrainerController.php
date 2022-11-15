@@ -30,7 +30,7 @@ class TrainerController extends Controller
      */
     public function create()
     {
-    return view("cards");//
+    return view("form");//
     }
     public function store(Request $request)
     {

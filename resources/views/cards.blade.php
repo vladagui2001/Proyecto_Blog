@@ -19,8 +19,6 @@
                 Delete... </a>
             <a href="/trainers/{{$trainer->id}}" class="btn btn-secondary">
                 Mostrar... </a>
-
-
   </div>
 </div>
 </div>

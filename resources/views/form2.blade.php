@@ -5,10 +5,10 @@
         {{Form::label('Apellidos','Apellidos')}}
         {{Form::text('Apellidos',null,['class'=>'form-control'])}}
         
-</div>
-<div class="form-group">
+    </div>
+    <div class="form-group">
         {{Form::label('avatar','Avatar')}}
         {{Form::file('avatar') }}
-</div>
-
+    </div>
+    
     
