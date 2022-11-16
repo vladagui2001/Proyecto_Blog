@@ -16,7 +16,7 @@
             <img style="height: 100px; width: 100px;
             background-color: #EFEFEF; margin: 20px;
             " class="card-img-top rounded-circle mx-auto d-block" 
-            src="images/{{$trainer->Avatar}}" alt="Imagen del Card..."> 
+            src="images/{{$trainer->Avatar}}""> 
             </td>
             <td>{{$trainer->id}}</td>
             <td>{{$trainer->name}}</td>

@@ -166,6 +166,8 @@ return [
 
         Barryvdh\DomPDF\ServiceProvider::class,
 
+        Laravel\Scout\ScoutServiceProvider::class,
+
         /*
          * Package Service Providers...
          */
