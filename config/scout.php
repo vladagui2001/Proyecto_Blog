@@ -113,7 +113,7 @@ return [
 
     'algolia' => [
         'id' => env('DODXAU55YL', ''),
-        'secret' => env('fac936534a5c691374cc4698425ff654', ''),
+        'secret' => env('cd0d46f9f95d40bf4c6a867eda1d8494', ''),
     ],
 
 ];

@@ -93,3 +93,6 @@ Route::get('delete/{id}','TrainerController@destroy');
 
 //Añadido el 01-11-22
 Route::get('descargar-entrenadores','TrainerController@pdf')->name('listado.pdf');
+
+//Añadido del 23-11-22
+Route::get('/search','Api\BusquedaController@search')->name('api.search');
