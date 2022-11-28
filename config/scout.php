@@ -112,8 +112,8 @@ return [
     */
 
     'algolia' => [
-        'id' => env('DODXAU55YL', ''),
-        'secret' => env('cd0d46f9f95d40bf4c6a867eda1d8494', ''),
+        'id' => env('ALGOLIA_APP_ID','DODXAU55YL'),
+        'secret' => env('ALGOLIA_SECRET','cd0d46f9f95d40bf4c6a867eda1d8494'),
     ],
 
 ];
